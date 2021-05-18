@@ -4,7 +4,18 @@
         <title>Diet Pi Index</title>
         <style>
             body {
-                background-color: darkslategray;
+                background-color: slategray;
+            }
+            li {
+                margin-top: 1em;;
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                color: inherit;
+            }
+            a > b {
+                text-decoration: underline;
             }
         </style>
     </head>
@@ -12,7 +23,18 @@
         <h1>Diet Pi Web Interface Index</h1>
         <ul>
             <li>
-                <a href="http://192.168.5.189/tasmoadmin">Tasmo Admin</a>
+                <a href="http://192.168.5.189/tasmoadmin">
+                    <b>Tasmo Admin</b>
+                    <br>
+                    <span>Tasmoto device manager</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://192.168.5.189:8123">
+                    <b>Home Assistant</b>
+                    <br>
+                    <span>Dasboard enabling the linking of various home assistant devices</span>
+                </a>
             </li>
             <li>
                 <a href="http://192.168.5.189:8123">Home Assistant</a>
