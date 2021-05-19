@@ -23,26 +23,32 @@
         <h1>Diet Pi Web Interface Index</h1>
         <ul>
             <li>
-                <a href="http://192.168.5.189/tasmoadmin">
+                <a href="/tasmoadmin">
                     <b>Tasmo Admin</b>
                     <br>
                     <span>Tasmoto device manager</span>
                 </a>
             </li>
             <li>
-                <a href="http://192.168.5.189:8123">
+                <a href=":8123">
                     <b>Home Assistant</b>
                     <br>
                     <span>Dasboard enabling the linking of various home assistant devices</span>
                 </a>
             </li>
             <li>
-                <a href="http://192.168.5.189:1880">
+                <a href=":1880">
                     <b>Node-Red</b>
                     <br>
                     <span>Automation workflow system</span>
                 </a>
             </li>
         </ul>
+        <script defer>
+            document.querySelectorAll('li a').forEach( element => {
+                const current = element.getAttribute('href');
+                element.setAttribute('href', window.location.origin + current);
+            } );
+        </script>
     </body>
 </html>
